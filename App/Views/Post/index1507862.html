@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<style>
+    table, td, th {
+        border: 1px solid black;
+        text-align: center;
+        margin: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+</style>
+<h1> POST</h1>
+
+<form action="product" method="get">
+    <input type="text" name="search_box" placeholder="Search..." value="{{search}}">
+    <button><a style="text-decoration: none" href="/post1507862" >Search</a></button>
+    <button><a style="text-decoration: none" href="post1507862-create" >Create new Post</a></button>
+</form>
+<table>
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Content</th>
+        <th>Created by</th>
+        <th>Created Date</th>
+        <th>Updated_Date</th>
+    </tr>
+    {% for post in posts %}
+    <tr style="text-align: center">
+        <td>{{ loop.index }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.description }}</td>
+        <td>{{ post.content }}</td>
+        <td>{{ post.username }}</td>
+        <td>{{ post.created_date }}</td>
+        {% if post.updated_date != '0' %}
+        <td>{{ post.updated_date }}</td>
+        {% else %}
+        <td> Haven't Update</td>
+        {% endif %}
+        <td>
+            <button><a style="text-decoration: none" href="post1507862-create/{{ post.id }}">Edit</a></button>
+            <button><a style="text-decoration: none" href="post1507862-delete/{{ post.id }}">Delete</a></button>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

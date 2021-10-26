@@ -1,0 +1,41 @@
+[23-Jun-2021 06:55:05 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('abc')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 06:55:14 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('abc')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 06:55:26 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('abc')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 06:56:05 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('bbb')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 07:03:13 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('bbb')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 07:07:17 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('bbb')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 07:07:32 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('aaa')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[23-Jun-2021 07:07:51 UTC] Uncaught exception: Twig\Error\LoaderError with message: Unable to find template "Home/index1.html" (looked into: ../App/Views).
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/vendor/twig/twig/src/Loader/FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Home/index1.htm...')
+#1 /Volumes/Works/Works/62PM1/MVC/vendor/twig/twig/src/Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Home/index1.htm...')
+#2 /Volumes/Works/Works/62PM1/MVC/vendor/twig/twig/src/Environment.php(309): Twig\Environment->getTemplateClass('Home/index1.htm...')
+#3 /Volumes/Works/Works/62PM1/MVC/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('Home/index1.htm...')
+#4 /Volumes/Works/Works/62PM1/MVC/Core/View.php(27): Twig\Environment->render('Home/index1.htm...', Array)
+#5 /Volumes/Works/Works/62PM1/MVC/App/Controllers/Home/HomeController.php(19): Core\View::renderTemplate('Home/index1.htm...', Array)
+#6 [internal function]: App\Controllers\Home\HomeController->indexAction()
+#7 /Volumes/Works/Works/62PM1/MVC/Core/Controller.php(13): call_user_func_array(Array, Array)
+#8 /Volumes/Works/Works/62PM1/MVC/Core/Router.php(51): Core\Controller->__call('index', Array)
+#9 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('')
+#10 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/vendor/twig/twig/src/Loader/FilesystemLoader.php on line 227

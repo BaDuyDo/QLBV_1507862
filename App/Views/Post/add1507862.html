@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Add && edit{% endblock %}
+
+{% block body %}
+<h1>Post </h1>
+{% if post.errors is not empty %}
+<p>Errors:</p>
+<ul>
+    {% for error in post.errors %}
+    <li>{{ error }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<form action="/post1507862-save" method="POST">
+    <input type="hidden" name="id" value="{{ post.id }}">
+    <div>
+        <label >Title</label>
+        <input type="text" name="title" placeholder="Title" value="{{ post.title }}">
+    </div>
+    <div>
+        <label>Description</label>
+        <input type="text" name="description" placeholder="Description" value="{{ post.description }}">
+    </div>
+    <div>
+        <label>Content</label>
+        <textarea name="content">{{ post.content }}</textarea>
+    </div>
+    {% if post.created_date != 0 %}
+        {% if post.created_date != '0' %}
+        <div>
+            <label>Created at</label>
+            <input name="created-date" value="{{ post.created_date }}">
+        </div>
+        {% endif %}
+
+        {% if post.updated_date != '0' %}
+            <div>
+                <label>Update at</label>
+                <input name="updated-date" value="{{ post.updated_date }}">
+            </div>
+        {% endif %}
+    {% endif %}
+    <button>Submit</button>
+</form>
+{% endblock %}

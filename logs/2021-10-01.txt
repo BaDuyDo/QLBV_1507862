@@ -1,0 +1,16 @@
+[01-Oct-2021 00:52:10 UTC] Uncaught exception: Exception with message: Controller class App\Controllers\PostsController not found
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('posts/123/edit')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 57
+[01-Oct-2021 00:52:17 UTC] Uncaught exception: Exception with message: No route matched
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('posts/')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 61
+[01-Oct-2021 00:52:19 UTC] Uncaught exception: Exception with message: Controller class App\Controllers\PostsController not found
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(26): Core\Router->dispatch('posts/123/edit')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 57
+[01-Oct-2021 05:32:38 UTC] Uncaught exception: Exception with message: Controller class App\Controllers\PostsController not found
+Stack trace:#0 /Volumes/Works/Works/62PM1/MVC/public/index.php(24): Core\Router->dispatch('posts/index')
+#1 {main}
+Thrown in /Volumes/Works/Works/62PM1/MVC/Core/Router.php on line 57
